@@ -64,7 +64,7 @@ Then, build `sandreco` using the following commands:
 mkdir <installation path>
 cd <installation path>
 git clone https://github.com/DUNE/sandreco.git
-cd build & mkdir build
+mkdir build && cd build
 spack load gcc@12.2.0
 spack load root@6.28.12
 spack load edepsim@3.2.0
@@ -82,7 +82,7 @@ mkdir <installation path>
 cd <installation path>
 git clone https://github.com/DUNE/sandreco.git
 sed -i "s:set(CMAKE_CXX_STANDARD 17):set(CMAKE_CXX_STANDARD 14):g" sandreco/CMakeLists.txt
-cd build & mkdir build
+mkdir build && cd build
 source /opt/exp_software/neutrino/env.sh
 cmake ../sandreco/ -DCMAKE_INSTALL_PREFIX=..
 make -j8
