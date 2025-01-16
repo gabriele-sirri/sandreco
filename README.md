@@ -81,9 +81,8 @@ On the CNAF machine run, [CMake](https://cmake.org/) is used to build `sandreco`
 mkdir <installation path>
 cd <installation path>
 git clone https://github.com/DUNE/sandreco.git
-sed -i "s:set(CMAKE_CXX_STANDARD 17):set(CMAKE_CXX_STANDARD 14):g" sandreco/CMakeLists.txt
 mkdir build && cd build
-source /opt/exp_software/neutrino/env.sh
+source /opt/exp_software/neutrino/al9/env.sh
 cmake ../sandreco/ -DCMAKE_INSTALL_PREFIX=..
 make -j8
 make install
