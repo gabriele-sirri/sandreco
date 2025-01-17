@@ -266,7 +266,7 @@ jobs:
           source ~/gegede/ggdvenv/bin/activate
           cd ~/dunendggd
           GEO=${{matrix.sand-geometry}}
-          make ${GEO}.gdml -j2
+          make ${GEO} -j2
           mkdir -p ~/geo 
           mv ${GEO}.gdml ~/geo/.
 
