@@ -293,6 +293,7 @@ jobs:
           source ~/sandreco/setup.sh
           mkdir ~/sandreco-reco
           cd ~/sandreco-reco
+          GEO=${{matrix.sand-geometry}}
           Digitize ~/edepsim-events/${GEO}.edep.root ${GEO}.digit.root
           Reconstruct ~/edepsim-events/${GEO}.edep.root ${GEO}.digit.root ${GEO}.reco.root
 
